@@ -1,6 +1,6 @@
 workflows:
   app-store-release:
-    name: Little Trip App Store
+    name: Little Walk App Store
     max_build_duration: 60
     instance_type: mac_mini_m2
     environment:
@@ -10,8 +10,8 @@ workflows:
       vars:
         BUNDLE_ID: com.hanwaygo.gos
         APP_STORE_APPLE_ID: "6811079070"
-        XCODE_PROJECT: LittleTrip.xcodeproj
-        XCODE_SCHEME: LittleTrip
+        XCODE_PROJECT: LittleWalk.xcodeproj
+        XCODE_SCHEME: LittleWalk
     scripts:
       - name: Set up code signing
         script: |

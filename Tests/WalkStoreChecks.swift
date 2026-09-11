@@ -2,7 +2,7 @@ import Foundation
 
 @main struct WalkStoreChecks {
     static func main() throws {
-        let folder = FileManager.default.temporaryDirectory.appendingPathComponent("LittleTripTests-\(UUID())")
+        let folder = FileManager.default.temporaryDirectory.appendingPathComponent("LittleWalkTests-\(UUID())")
         defer { try? FileManager.default.removeItem(at: folder) }
         let t0 = Date(timeIntervalSince1970: 1800000000)
         let store = WalkStore(directory: folder)

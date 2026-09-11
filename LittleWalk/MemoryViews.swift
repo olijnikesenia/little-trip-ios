@@ -8,7 +8,7 @@ struct MemoryPostcard: View {
     private var paper: Color { style == .dusk ? HW.ink : (style == .field ? HW.cream : Color(hex: 0xEFF1D9)) }
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            HStack { Text(style == .field ? "LITTLE TRIP / FIELD NOTES" : "LITTLE TRIP / A LITTLE OUTSIDE").font(.system(size: 9, weight: .semibold, design: .monospaced)).tracking(1.2).foregroundStyle(muted); Spacer(); Image(systemName: session.plan.mood.symbol).font(.system(size: 20)) }
+            HStack { Text(style == .field ? "LITTLE WALK / FIELD NOTES" : "LITTLE WALK / A LITTLE OUTSIDE").font(.system(size: 9, weight: .semibold, design: .monospaced)).tracking(1.2).foregroundStyle(muted); Spacer(); Image(systemName: session.plan.mood.symbol).font(.system(size: 20)) }
             Text(session.plan.mood.title + " looks\ngood on you.").font(.system(size: 36, weight: .semibold, design: .rounded)).tracking(-1)
             ZStack {
                 if style == .field {
@@ -75,7 +75,7 @@ struct MemoryView: View {
                             VStack(alignment: .leading, spacing: 12) { Kicker(text: "Moments you kept"); ForEach(session.moments) { moment in Button { momentTarget = MomentTarget(id: moment.id, sessionID: id) } label: { MomentRow(moment: moment) }.buttonStyle(.plain) } }
                         }
                         if readyToShare, let shareImage {
-                            ShareLink(item: shareImage, preview: SharePreview("My Little Trip", image: shareImage)) {
+                            ShareLink(item: shareImage, preview: SharePreview("My Little Walk", image: shareImage)) {
                                 HStack { Text("Share Your Memory").fontWeight(.semibold); Spacer(); Image(systemName: "square.and.arrow.up") }.padding(22).foregroundStyle(HW.cream).background(HW.ink, in: Capsule())
                             }
                         } else {

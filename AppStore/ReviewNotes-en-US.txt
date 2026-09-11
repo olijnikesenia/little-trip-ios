@@ -1,4 +1,4 @@
-Little Trip is a general-consumer lifestyle app for self-guided walks and a private walking journal.
+Little Walk is a general-consumer lifestyle app for self-guided walks and a private walking journal.
 
 Reviewer access
 There is no login, registration, account creation, account deletion, demo account, subscription, in-app purchase, paywall or restricted content. No credentials or sample files are required. Launching the app provides immediate access to every feature.
@@ -18,10 +18,10 @@ During a walk, A little detour opens a deck of 12 observation notes. Tap a note 
 
 No account, login credentials, sample files or server configuration are required. All features are accessible locally. The first launch has no completed walks; completing a walk creates the first memory.
 
-The road drawings are abstract illustrations, not geographic maps or GPS traces. Little Trip does not access location, provide navigation, generate street routes, measure distance, obtain weather, identify nearby businesses, or determine terrain or crowd levels. Users choose their own path. Atmosphere labels are user-selected impressions, not weather readings.
+The road drawings are abstract illustrations, not geographic maps or GPS traces. Little Walk does not access location, provide navigation, generate street routes, measure distance, obtain weather, identify nearby businesses, or determine terrain or crowd levels. Users choose their own path. Atmosphere labels are user-selected impressions, not weather readings.
 
 No external backend, data provider, analytics service, advertising service, payment processor, AI service or third-party SDK is used for core functionality. Local files store notes, timing information and imported photos. The system photo picker may need to download a selected iCloud photo if it is not already on the device. Imported photos and the journal are available offline. The timer restores on relaunch and does not issue background navigation alerts.
 
 There are no subscriptions, in-app purchases, public user-generated content, social features, rewards or virtual currencies. Sharing is an explicit action through the iOS share sheet. Features are the same across regions; the current interface language is English.
 
-Little Trip does not offer services in a regulated industry. The app icon is artwork supplied and controlled by the developer. The in-app road and landscape illustrations are drawn from original vector geometry in the project.
+Little Walk does not offer services in a regulated industry. The app icon is artwork supplied and controlled by the developer. The in-app road and landscape illustrations are drawn from original vector geometry in the project.

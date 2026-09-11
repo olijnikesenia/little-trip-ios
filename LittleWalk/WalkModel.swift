@@ -111,7 +111,7 @@ extension WalkMood {
         case .fresh: return [
             .init(title: "Find three shades of green", detail: "A leaf is rarely just one color. Look for three different greens around you.", symbol: "paintpalette"),
             .init(title: "A tiny wild thing", detail: "Notice a plant growing somewhere unexpected. No need to leave your path to find one.", symbol: "leaf"),
-            .init(title: "Trace a branch with your eyes", detail: "Follow one branch from trunk to tip. Notice how it makes its own little trip.", symbol: "tree"),
+            .init(title: "Trace a branch with your eyes", detail: "Follow one branch from trunk to tip. Notice how it makes its own little walk.", symbol: "tree"),
             .init(title: "Listen for a natural rhythm", detail: "Leaves, rain or wind: is there something around you keeping its own time?", symbol: "waveform"),
             .init(title: "Find a patch of open sky", detail: "Look between buildings or trees and notice the shape of the sky they frame.", symbol: "cloud.sun")]
         case .curious: return [
@@ -196,19 +196,19 @@ final class WalkStore: ObservableObject {
     var memories: [WalkSession] { data.memories.sorted { $0.startedAt > $1.startedAt } }
 
     init(directory: URL? = nil) {
-        self.directory = directory ?? FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("LittleTrip", isDirectory: true)
+        self.directory = directory ?? FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("LittleWalk", isDirectory: true)
         do {
             try FileManager.default.createDirectory(at: self.directory, withIntermediateDirectories: true)
             if FileManager.default.fileExists(atPath: dataURL.path) {
                 data = try JSONDecoder().decode(WalkData.self, from: Data(contentsOf: dataURL))
             }
             lastSaved = data
-        } catch { loadFailed = true; errorMessage = "Your saved walks could not be opened. Please try reopening Little Trip. Your existing file has been kept." }
+        } catch { loadFailed = true; errorMessage = "Your saved walks could not be opened. Please try reopening Little Walk. Your existing file has been kept." }
     }
     @discardableResult private func save() -> Bool {
         guard !loadFailed else {
             data = lastSaved
-            errorMessage = "Your saved walks could not be opened. Your existing file has been kept. Please reopen Little Trip before making changes."
+            errorMessage = "Your saved walks could not be opened. Your existing file has been kept. Please reopen Little Walk before making changes."
             return false
         }
         do {

@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct LittleTripApp: App {
+struct LittleWalkApp: App {
     @StateObject private var store = WalkStore()
     var body: some Scene {
         WindowGroup {
@@ -33,8 +33,8 @@ struct WayHome: View {
                         HStack {
                             HStack(spacing: 9) {
                                 Image(systemName: "point.topleft.down.to.point.bottomright.curvepath").font(.system(size: 22, weight: .semibold))
-                                Text("little trip").font(.system(size: 24, weight: .bold, design: .rounded)).tracking(-1)
-                            }.accessibilityLabel("Little Trip")
+                                Text("little walk").font(.system(size: 24, weight: .bold, design: .rounded)).tracking(-1)
+                            }.accessibilityLabel("Little Walk")
                             Spacer()
                             RoundButton(symbol: "square.grid.2x2", label: "Personal Landscape") { path.append(.landscape) }
                         }
@@ -110,13 +110,13 @@ struct AboutView: View {
                 VStack(alignment: .leading, spacing: 25) {
                     SunSeal(size: 55)
                     Text("A companion for\na little outside.").font(.system(size: 32, weight: .semibold, design: .rounded))
-                    Text("Little Trip turns a mood and a little free time into a self-guided walk. Choose your own streets and let the prompts help you notice more.")
+                    Text("Little Walk turns a mood and a little free time into a self-guided walk. Choose your own streets and let the prompts help you notice more.")
                     Label("Walk ideas, not turn-by-turn directions", systemImage: "point.topleft.down.to.point.bottomright.curvepath").font(.headline)
-                    Text("The road illustrations are expressive shapes, not geographic routes. Little Trip does not measure distance, track your position, or check nearby conditions.").foregroundStyle(HW.muted)
+                    Text("The road illustrations are expressive shapes, not geographic routes. Little Walk does not measure distance, track your position, or check nearby conditions.").foregroundStyle(HW.muted)
                     Label("Your memories stay with you", systemImage: "lock").font(.headline)
                     Text("Walks, notes and selected photos are saved on this device. No account, ads or analytics. Everything works offline once a selected photo is available on your device. Sharing a memory is always your choice.").foregroundStyle(HW.muted)
                     Text("You can delete individual moments and saved walks from their detail screens. Uninstalling the app removes its local data. Your device backup settings may also apply.").font(.footnote).foregroundStyle(HW.muted)
-                    Kicker(text: "Little Trip · Version 1.0")
+                    Kicker(text: "Little Walk · Version 1.0")
                 }.padding(26)
             }.background(HW.cream).foregroundStyle(HW.ink)
                 .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }

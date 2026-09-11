@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply Little Trip metadata to its existing App Store Connect record."""
+"""Apply Little Walk metadata to its existing App Store Connect record."""
 
 import json
 import os

@@ -1,23 +1,23 @@
-# Little Trip
+# Little Walk
 
 Отдельный нативный SwiftUI-проект для iPhone, iOS 17+. Интерфейс на английском.
 
-Little Trip помогает выбрать настроение и время для самостоятельной прогулки, замечать детали и сохранять воспоминания. Использует только Apple frameworks; сервер, ключи API и аккаунт пользователя не нужны.
+Little Walk помогает выбрать настроение и время для самостоятельной прогулки, замечать детали и сохранять воспоминания. Использует только Apple frameworks; сервер, ключи API и аккаунт пользователя не нужны.
 
 ## Запуск
 
-Откройте `LittleTrip.xcodeproj`, выберите схему **LittleTrip** и iPhone Simulator, нажмите Run.
+Откройте `LittleWalk.xcodeproj`, выберите схему **LittleWalk** и iPhone Simulator, нажмите Run.
 
 Для физического iPhone выберите свою команду в Signing & Capabilities. Bundle identifier: `com.hanwaygo.gos`.
 
 ```sh
-xcodebuild -project LittleTrip.xcodeproj -scheme LittleTrip \
+xcodebuild -project LittleWalk.xcodeproj -scheme LittleWalk \
   -configuration Debug -sdk iphonesimulator \
   -destination 'generic/platform=iOS Simulator' \
   -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
 
-swiftc LittleTrip/WalkModel.swift Tests/WalkStoreChecks.swift -o /tmp/little-trip-store-checks
-/tmp/little-trip-store-checks
+swiftc LittleWalk/WalkModel.swift Tests/WalkStoreChecks.swift -o /tmp/little-walk-store-checks
+/tmp/little-walk-store-checks
 ```
 
 ## Реализованный сценарий
@@ -48,13 +48,13 @@ swiftc LittleTrip/WalkModel.swift Tests/WalkStoreChecks.swift -o /tmp/little-tri
 
 ## Хранение и приватность
 
-`Application Support/LittleTrip/walks.json` — атомарная запись активной прогулки и истории. Фото сохраняются отдельно, уменьшаются до 1600 px и перекодируются в JPEG. При удалении момента или прогулки удаляются соответствующие импортированные фото. При ошибке записи состояние откатывается к последней успешной записи; повреждённый исходный файл не затирается.
+`Application Support/LittleWalk/walks.json` — атомарная запись активной прогулки и истории. Фото сохраняются отдельно, уменьшаются до 1600 px и перекодируются в JPEG. При удалении момента или прогулки удаляются соответствующие импортированные фото. При ошибке записи состояние откатывается к последней успешной записи; повреждённый исходный файл не затирается.
 
 Нет аналитики, рекламы, платежей, облачного бэкенда, внешних SDK, регистрации или социальных функций. Системные резервные копии зависят от настроек устройства. Присутствует `PrivacyInfo.xcprivacy`.
 
 ## Визуальные материалы
 
-Иконка 1024 × 1024 без прозрачности: `LittleTrip/Assets.xcassets/AppIcon.appiconset/AppIcon.png`.
+Иконка 1024 × 1024 без прозрачности: `LittleWalk/Assets.xcassets/AppIcon.appiconset/AppIcon.png`.
 Иконка сделана из переданного владельцем проекта исходного изображения.
 Скриншоты фактически запущенного приложения: `Preview/`.
 

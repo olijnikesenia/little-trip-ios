@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replace the largest-iPhone screenshot set with Little Trip screenshots."""
+"""Replace the largest-iPhone screenshot set with Little Walk screenshots."""
 
 import hashlib
 import json
