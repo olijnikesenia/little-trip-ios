@@ -1,0 +1,27 @@
+Little Trip is a general-consumer lifestyle app for self-guided walks and a private walking journal.
+
+Reviewer access
+There is no login, registration, account creation, account deletion, demo account, subscription, in-app purchase, paywall or restricted content. No credentials or sample files are required. Launching the app provides immediate access to every feature.
+
+Purpose and audience
+The app helps people choose a mood and a little free time, follow a sequence of observation prompts, and keep personal memories. It is designed for ordinary consumers, not an organization or employee group.
+
+How to use
+1. Choose Clear, Fresh, Curious, Fast, or Quiet on the first screen. You may tap a mood or swipe the road illustration.
+2. Tap Create My Way. Drag across the duration shape or use a preset to choose 15–120 minutes. Optionally include a gentle pace, a reminder to find your own way back, or a rest prompt.
+3. Tap Reveal My Way to see 3–6 prompts, depending on duration. Shuffle remixes the ideas. Tap Let's Go Outside to start the timer.
+4. Pause or resume as needed. Leave a Mark immediately saves a moment; optional text, a feeling and a photo from the system photo picker can be added.
+5. Finish the walk to save a memory. Add a reflection and a subjective atmosphere, and optionally make an image card for the system share sheet.
+6. Open Personal Landscape from the top-right button on the home screen to browse saved walks, filter by mood, edit moments and delete walks.
+
+During a walk, A little detour opens a deck of 12 observation notes. Tap a note to turn it over, swipe for another, and optionally save a thought as a moment. Just a pause shows a gentle sun animation and temporarily pauses the walk timer. Saved memories offer three visual card styles: Postcard, Field note and Blue hour.
+
+No account, login credentials, sample files or server configuration are required. All features are accessible locally. The first launch has no completed walks; completing a walk creates the first memory.
+
+The road drawings are abstract illustrations, not geographic maps or GPS traces. Little Trip does not access location, provide navigation, generate street routes, measure distance, obtain weather, identify nearby businesses, or determine terrain or crowd levels. Users choose their own path. Atmosphere labels are user-selected impressions, not weather readings.
+
+No external backend, data provider, analytics service, advertising service, payment processor, AI service or third-party SDK is used for core functionality. Local files store notes, timing information and imported photos. The system photo picker may need to download a selected iCloud photo if it is not already on the device. Imported photos and the journal are available offline. The timer restores on relaunch and does not issue background navigation alerts.
+
+There are no subscriptions, in-app purchases, public user-generated content, social features, rewards or virtual currencies. Sharing is an explicit action through the iOS share sheet. Features are the same across regions; the current interface language is English.
+
+Little Trip does not offer services in a regulated industry. The app icon is artwork supplied and controlled by the developer. The in-app road and landscape illustrations are drawn from original vector geometry in the project.
