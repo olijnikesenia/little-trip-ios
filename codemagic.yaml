@@ -5,6 +5,8 @@ workflows:
     instance_type: mac_mini_m2
     environment:
       xcode: latest
+      groups:
+        - appstore_credentials
       vars:
         BUNDLE_ID: com.hanwaygo.gos
         APP_STORE_APPLE_ID: "6811079070"
